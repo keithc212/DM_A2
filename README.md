@@ -1,11 +1,10 @@
-# DM_A2
-# Data Mining Assignment 2 code
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import SGDClassifier
+
 # replace any NaN values
 df.replace([np.inf, -np.inf], np.nan, inplace=True)
 df = df.fillna(0)

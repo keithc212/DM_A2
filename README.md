@@ -22,8 +22,8 @@ train_features, test_features, train_labels, test_labels = model_selection.train
 cls = make_pipeline(StandardScaler(), SGDClassifier())
 
 # fit classifier to data
-cls.fit(train_features, train_labels)
+cls_train = cls.fit(train_features, train_labels)
 
 # create predictions and score accuracy
-print(cls.score(test_features, test_labels))
+print(cls_train.score(test_features, test_labels))
 

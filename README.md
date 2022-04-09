@@ -26,3 +26,4 @@ cls.fit(train_features, train_labels)
 
 # create predictions and score accuracy
 print(cls.score(test_features, test_labels))
+
